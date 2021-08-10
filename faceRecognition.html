@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1" />
+  <title>Face Recognition</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/faceRecognition.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/96772621e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#webpageNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="webpageNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="header">
+      <div class="container-fluid main-header">
+        <h1 class="page-header">Face Recogntion Project</h1>
+        <br>
+        <p class="header-paragraph">
+          This simple face recognition project is sectioned into two parts:
+          face detection and face recognition. The first step is to run the face
+          detection code which prompts the user to name found faces for the application
+          to save and recognize. The second step, face recognition, allows the
+          user to select a photo that the program will detect and caption with
+          names which have been previosuly stored from step one.
+        </p>
+        <br>
+        <a href="https://github.com/wbmorley/FaceRecognition-" class="btn btn-dark"><i class="fab fa-github"></i> View on Github</a>
+      </div>
+    </section>
+    <hr>
+    <section class="face-detection">
+      <div class="container-fluid detection-header">
+        <h3 class="">Face Detection</h3>
+        <br>
+        <p class="detection-paragraph">
+          The application will first need to be told which name belongs to which
+          face. The face detection step will find faces in a given picture and
+          prompt for names.
+        </p>
+      </div>
+      <div class="container-fluid detection-content">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="detection-image img-fluid" src="images/faceDetect2.jpg" alt="face detection">
+          </div>
+          <div class="col-md-7">
+            <div class="accordion accordion-flush" id="detectionAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOneDetect">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneDetect" aria-expanded="true" aria-controls="collapseOneDetect">
+                    Photo Directory Selection
+                  </button>
+                </h2>
+                <div id="collapseOneDetect" class="accordion-collapse collapse" aria-labelledby="headingOneDetect" data-bs-parent="#accordionDetect">
+                  <div class="accordion-body">
+                    <div class=row>
+                      <div class="col">
+                        <img class="accordion-image-two img-fluid" src="images/detect-fileSelect.jpg" alt="picture file selection">
+                      </div>
+                      <div class="col">
+                        <img class="accordion-image-two img-fluid" src="images/detect-directorySelect.jpg" alt="known faces directory selection">
+                      </div>
+                    </div>
+                    <br>
+                    <p>
+                      The select photo pop-up will first appear and prompt for
+                      a photo selection. After selection, a pop-up
+                      to select a directory to store found faces will appear.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwoDetect">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoDetect" aria-expanded="false" aria-controls="collapseTwoDetect">
+                    Naming Found Faces
+                  </button>
+                </h2>
+                <div id="collapseTwoDetect" class="accordion-collapse collapse" aria-labelledby="headingTwoDetect" data-bs-parent="#accordionDetect">
+                  <div class="accordion-body">
+                    <img class="accordion-image img-fluid" src="images/detect-nameEnter.jpg" alt="name entry for face picture">
+                    <br>
+                    <p class=>
+                      The next step is to put names to found faces. Each face will
+                      appear in a pop-up and prompt the user to enter a name.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThreeDetect">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeDetect" aria-expanded="false" aria-controls="collapseThreeDetect">
+                    Saved Faces Directory
+                  </button>
+                </h2>
+                <div id="collapseThreeDetect" class="accordion-collapse collapse" aria-labelledby="headingThreeDetect" data-bs-parent="#accordionDetect">
+                  <div class="accordion-body">
+                    <img class="accordion-image img-fluid" src="images/detect-knownDirectory.jpg" alt="known faces directory after detection and naming">
+                    <br>
+                    <p>
+                      Once the program has detected faces and the user has input
+                      corresponding names, the cropped face is saved as a .jpg
+                      file using it's respective name. The saved directories
+                      will be used in the face recognition step as potential
+                      matches for any faces put through the application.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="face-recognition">
+      <div class="container-fluid recognition-header">
+        <h3 class="">Face Recognition</h3>
+        <br>
+        <p class="recognition-paragraph">
+          Once the application has detected faces and the user has given each
+          face a corresponding name, the user can then run the recognition step and input
+          any picture to scan for potential matches.
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="recognition-image img-fluid" src="images/recog-friends1.jpg" alt="friends face recognition 1">
+          </div>
+          <div class="col-md-4 recognition-content">
+            <p class="recognition-explain">
+              The user will select a photo or directory of photos to input through
+              the application and the system will use previously saved faces as potential
+              matches.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img class="recognition-image img-fluid" src="images/recog-friends2.jpg" alt="friends face recognition 2">
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
+
+  </main>
+  <footer class="footer" id="footer">
+    <div class="col col-footer">
+      <div>
+        <a class="btn btn-light" href="https://www.linkedin.com/in/william-morley-521395203/" ><i class="fab fa-linkedin footer-icon fa-2x"></i></a>
+        <a class="btn btn-light" href="https://github.com/wbmorley"><i class="fab fa-github footer-icon fa-2x"></i></a>
+      </div>
+      <div>
+        <p>© William Morley 2021</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+
+</html>

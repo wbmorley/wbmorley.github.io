@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1" />
+  <title>William's Personal Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/96772621e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#webpageNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="webpageNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#projects">Projects</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="landing">
+      <div class="container-fluid first-div bg-image" id="home">
+        <div class="row">
+          <div class="col-pic col-md-6">
+            <img class="img-fluid pic-me" src="images/headshot.png" alt="William Morley">
+          </div>
+          <div class="col-name col-md-6">
+            <h1>William Morley</h1>
+            <h3><strong>Recent Graduate<br>
+                Alexandria, VA</strong></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="container-fluid second-div" id="about">
+        <div class="row">
+          <div class="col image-div">
+            <img class="about-image" src="images/wv-background.png" alt="wvu logo">
+          </div>
+          <div class="col col-about">
+            <h2 class="section-title">About Me</h2>
+            <br>
+            <p class="about-paragraph">
+              <em><strong>Hi, I'm William Morley,</em></strong> a recent graduate from West Virginia University
+              where I majored in Biometric Systems Engineering with an emphasis in
+              software systems and a minor in computer science.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section class="skills">
+      <div class="row skills-words">
+        <div class="col-md skills-col">
+          <h2>Skills</h2>
+          Languages & Frameworks:
+          <ul>
+            <li>Profecient</li>
+            <ul>
+              <li>Python, MySQL</li>
+            </ul>
+            <li>Familiar</li>
+            <ul>
+              <li>HTML5, CSS, Javascript, Bootstrap5, C</li>
+            </ul>
+          </ul>
+          Systems:
+          <ul>
+            <li>Windows, Linux</li>
+          </ul>
+        </div>
+        <div class="col-md skill-icon-display">
+          <div class="row skills-row">
+            <div class="col-4 skill-icon">
+              <i class="fab fa-python fa-3x "></i>
+            </div>
+            <div class="col-4 skill-icon">
+              <i class="fas fa-database fa-3x "></i>
+            </div>
+            <div class="col-4 skill-icon">
+              <i class="fab fa-html5 fa-3x "></i>
+            </div>
+          </div>
+          <div class="row skills-row">
+            <div class="col-4 skill-icon">
+              <i class="fab fa-css3-alt fa-3x "></i>
+            </div>
+            <div class="col-4 skill-icon">
+              <i class="fab fa-js-square fa-3x "></i>
+            </div>
+            <div class="col-4 skill-icon">
+              <i class="fab fa-bootstrap fa-3x "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container-fluid third-div" id="projects">
+        <div class="row">
+          <div class="col col-projectHead">
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card text-white bg-secondary mx-auto mb-5 " style="width: 18rem;">
+            <img class="project-pic" src="images/FaceDetect.jpg" class="card-img-top" alt="face dection image">
+            <div class="card-body">
+              <h5 class="card-title">Face Recognition</h5>
+              <p>Implementation of a face detection and recognition system. Developed in Python. </p>
+              <a class="btn btn-light project-button" href="faceRecognition.html" role="button">More Info</a>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mx-auto mb-5 " style="width:18rem;">
+            <img class="project-pic" src="images/accessControl.jpg" alt="acces control project">
+            <div class="card-body">
+              <h5>Access Control</h5>
+              <p>Python project implemeting a "Facebook" wall using access control principles.</p>
+              <a class="btn btn-light" href="accessControl.html" role="button">More Info</a>
+            </div>
+          </div>
+          <div class="card text-white bg-secondary mx-auto mb-5 " style="width:18rem;">
+            <img class="project-pic" src="images/hospitalDBMS.jpg" alt="hospital database management project">
+            <div class="card-body">
+              <h5>Hospital Management System</h5>
+              <p>Python & MySQL projet to implement a basic hospital database management system.</p>
+              <a class="btn btn-light" href="hospitalDBMS.html" role="button">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="col col-footer">
+      <div>
+        <a class="btn btn-dark" href="https://www.linkedin.com/in/william-morley-521395203/"><i class="fab fa-linkedin footer-icon fa-2x"></i></a>
+        <a class="btn btn-dark" href="https://github.com/wbmorley"><i class="fab fa-github footer-icon fa-2x"></i></a>
+      </div>
+      <div>
+        <p>© William Morley 2021</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+
+</html>

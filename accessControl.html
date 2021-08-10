@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1" />
+  <title>William's Personal Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/accessControl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/96772621e9.js" crossorigin="anonymous"></script>
+</head>
+
+</html>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#webpageNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="webpageNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="access-header">
+    <div class="container-fluid main-header">
+      <h1 class="page-header">Access Control Project</h1>
+      <br>
+      <p class="header-paragraph">
+        This project is an implementation of a "Facebook wall" that uses principles
+        of access control to allow or restrict certain actions for users
+        depending on their given privileges. The root user is able to add friends,
+        add friends to lists, post pictures, and give read and comment privileges to friends.
+        Friends are able to view the root profile, post photos on the profile, and read
+        and write comments; if given the privileges to do so. Developed in Python.
+      </p>
+      <br>
+      <a href="https://github.com/wbmorley/AccessControl" class="btn btn-dark"><i class="fab fa-github"></i> View on Github</a>
+    </div>
+  </section>
+  <hr>
+
+  <section class="access-legend">
+    <h3 class="section-title">Example Input</h3>
+    <div class="row content-row">
+      <p class="paragraph">
+        The program takes in an input file that contains all commands along with
+        arugments that are necessary for each command. The input file will be in
+        the format of a text file.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col image-div">
+        <img class="ex-image" src="images/access-example.jpg" alt="access control example input">
+      </div>
+    </div>
+    </div>
+    <hr>
+    <h3 class="section-title">Command Legend</h3>
+    <div class="row legend-row">
+      <div class="col-md-6 legend-col-left">
+        <table class=>
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>friendadd(friend_name)</td>
+              <td>This command will add a friend with "friend_name". The "friend_name"
+                will be added to the friends list. *root must be added first friend added* </td>
+            </tr>
+            <tr>
+              <td>viewby(friend_name)</td>
+              <td>This command will allow "friend_name" to view the profile.</td>
+            </tr>
+            <tr>
+              <td>logout</td>
+              <td>This command will log out the user the has most recently called the
+                viewby command.</td>
+            </tr>
+            <tr>
+              <td>listadd(list_name)</td>
+              <td>This command will add create a new list named "list_name". This command must
+                be called when the root user is currently viewing the profile.</td>
+            </tr>
+            <tr>
+              <td>friendlist(friend_name, list_name)</td>
+              <td>This command will add add a friend, "friend_name", to the list "list_name"</td>
+            </tr>
+            <tr>
+              <td>postpicture(picture_name)</td>
+              <td>This command will post a picture with the name "picture_name" to the
+                profile by the person currently viewing the profile. Default privileges are rw -- --</td>
+            </tr>
+            <tr>
+              <td>chlst(picture_name, list_name)</td>
+              <td>This command will change the list, list_name, associated with
+                the picture, picture_name. The user currently viewing the profile
+                calls the command and if privileges are given, the user changes the list
+                associated with the picture. </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 legend-col-right">
+        <table>
+          <thead>
+            <th>Command</th>
+            <th>Action</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>chmod(picture_name, owner_perm, list_perm, others_perm)</td>
+              <td>This command will change the privileges assocaited with a picture.
+                Privileges are set to r(read) or w(write) for the owner, asssociated list members,
+                and others. This command can only be called by the root user or friend
+                which posted the picture to the profile.</td>
+            </tr>
+            <tr>
+              <td>chown(picture_name, friend_name)</td>
+              <td>This command will change the owner of the picture, picture_name, to
+                the friend, friend_name. This command can only be called by the root user.</td>
+            </tr>
+            <tr>
+              <td>readcomments(picture_name)</td>
+              <td>This command will allow a user to read comments posted to a picture.
+                If the user which calls this command is the owner, associated with a
+                list the picture belongs to, or others are given read privileges; the
+                comments are displayed. </td>
+            </tr>
+            <tr>
+              <td>writecomment(picture_name, text)</td>
+              <td>This command will allow a user to write text as a comment on the picture.
+                If the user which calls this command is the owner, associated with a
+                list the picture belongs to, or others are given write privileges; the
+                comments are appended to the picture file.</td>
+            </tr>
+            <tr>
+              <td>end</td>
+              <td>Signals the end of the text fie contaning the commands. </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+  <hr>
+
+  <section class="access-files">
+    <h2 class="section-title">Output Files</h2>
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <div class="card mx-auto" style="width: 15rem;">
+          <img class="card-img-top" src="images/access-audit.jpg" alt="audit log">
+          <div class="card-body">
+            <h5 class="card-title">Audit Log</h5>
+            <p class="card-text">This file is an audit log of all actions that have taken place.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card mx-auto" style="width: 15rem;">
+          <img class="card-img-top" src="images/access-picPerm.jpg" alt="permissions of pictures">
+          <div class="card-body">
+            <h5 class="card-title">Photo Permissions</h5>
+            <p class="card-text">This file contains all picture file names followed by their
+              respective permissions for owners, lists, and others, respectively.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card mx-auto" style="width: 15rem;">
+          <img class="card-img-top" src="images/access-friends.jpg" alt="list of added friends">
+          <div class="card-body">
+            <h5 class="card-title">Friends</h5>
+            <p class="card-text">This file contains all friends that have been added to the profile.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="card mx-auto" style="width: 15rem;">
+          <img class="card-img-top" src="images/access-picFile.jpg" alt="file of comments on picture">
+          <div class="card-body">
+            <h5 class="card-title">Picture File</h5>
+            <p class="card-text">This file is a text file that mimics a photo which contains the
+              comments and who posted the comment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+  </section>
+</body>
+
+<footer class="footer" id="footer">
+  <div class="col col-footer">
+    <div>
+      <a class="btn btn-light" href="https://www.linkedin.com/in/william-morley-521395203/"><i class="fab fa-linkedin footer-icon fa-2x"></i></a>
+      <a class="btn btn-light" href="https://github.com/wbmorley"><i class="fab fa-github footer-icon fa-2x"></i></a>
+    </div>
+    <div>
+      <p>© William Morley 2021</p>
+    </div>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1" />
+  <title>William's Personal Site</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/hospitalDBMS.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Otomanopee+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/96772621e9.js" crossorigin="anonymous"></script>
+</head>
+
+<main>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#webpageNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="webpageNavbar">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#projects">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hospital-header">
+      <div class="container-fluid main-header">
+        <h1 class="page-header">Hospital Database Mangement System</h1>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md">
+            <img class="dbms-pic" src="images/hospitalDBMS.jpg" alt="hospital dbms">
+          </div>
+          <div class="col-md">
+            <p class="header-paragraph">
+              This implementation of a hospital database management system allows the user
+              to check-in and check-out patients, add and remove employees, as well as
+              view and search current patients and employees. Developed in Python
+              using MySQL.
+            </p>
+            <a href="https://github.com/wbmorley/hospitalDBMS" class="btn btn-dark"><i class="fab fa-github"></i> View on Github</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="hospital-patients">
+      <h3 class="section-title">Checking In & Out Patients</h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-checkin.jpg" alt="patient check in">
+        </div>
+        <div class="col-sm-12 col-md-4 paragraph-div">
+          <p class="paragraph">
+            For patient check-in, the application prompts the user to enter five
+            different fields of data: last name, first name, department, room,
+            and doctor. The doctor drop down menu contains a list
+            of employees that have been already added with the position 'doctor'.
+
+            For patient check-out, the user must input the patient ID and the patient
+            is checked-out.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-checkout.jpg" alt="patient check out">
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="hospital-employees">
+      <h3 class="section-title">Add & Remove Employees</h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-addEmp.jpg" alt="add employee">
+        </div>
+        <div class="col-sm-12 col-md-4 paragraph-div">
+          <p class="paragraph">
+            While adding employees, there are four data fields which require data:
+            last name, first name, position, and department.
+
+            For employee removal, the user must input the employee ID into the system and
+            the employee is removed.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-empRemove.jpg" alt="Remove employee">
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="hospital-view">
+      <h3 class="section-title">Viewing Patients & Employees</h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-viewpatients.jpg" alt="view patients">
+        </div>
+        <div class="col-sm-12 col-md-4 paragraph-div">
+          <p class="paragraph">
+            To view either patients or employees, the appliaction will make a request
+            to the database for all of the current data for either the patients or
+            employees.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-viewEmp.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <section class="hospital-search">
+      <h3 class="section-title">Patient & Employee Search</h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-searchPatient.jpg" alt="Patient search">
+        </div>
+        <div class="col-sm-12 col-md-4 paragraph-div">
+          <p class="paragraph">
+            Users will also have the ability to search through patients and employees
+            currently in the database. The results
+            will be printed in the same fashion that viewing patients or employees is displayed.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <img class="body-image" src="images/hospital-searchEmp.jpg" alt="employee search">
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  </body>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="col col-footer">
+    <div>
+      <a class="btn btn-light" href="https://www.linkedin.com/in/william-morley-521395203/" ><i class="fab fa-linkedin footer-icon fa-2x"></i></a>
+      <a class="btn btn-light" href="https://github.com/wbmorley"><i class="fab fa-github footer-icon fa-2x"></i></a>
+    </div>
+    <div>
+      <p>© William Morley 2021</p>
+    </div>
+  </div>
+</footer>
+
+</html>
