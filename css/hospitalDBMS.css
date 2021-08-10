@@ -1,0 +1,48 @@
+body{
+  overflow-x: hidden;
+}
+/* Header CSS */
+.main-header{
+  text-align: center;
+  padding: 5% 10%;
+}
+.dbms-pic{
+  width: 85%;
+  height: 350px;
+  border: solid 0.5px black;
+}
+.header-paragraph{
+  padding: 10% 0;
+}
+ @media screen and (max-width: 768px){
+   .header-paragraph{
+     padding-top: 5%;
+   }
+ }
+/* body CSS*/
+.section-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.body-image{
+  width:80%;
+  display:block;
+  margin: 10px auto;
+  border: solid 0.75px black;
+}
+.paragraph-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph{
+  text-align: center;
+}
+/* Footer CSS */
+.col-footer{
+  text-align: center;
+}
+.footer .btn{
+  background-color: white;
+  border: none;
+}
