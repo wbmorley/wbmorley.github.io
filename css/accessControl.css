@@ -1,0 +1,86 @@
+/* Elements */
+body{
+  overflow-x: hidden;
+}
+table, th, td{
+  border:  0.5px solid black;
+  font-size: 0.60rem;
+}
+table{
+  height: 400px;
+  width: 480px;
+}
+th, td{
+  padding:10px;
+}
+/* Header CSS */
+.main-header{
+  text-align: center;
+  padding: 5% 17%;
+}
+/* Body  CSS*/
+.section-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.content-row{
+  padding: 0 200px;
+  margin-bottom: 20px;
+}
+.image-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ex-image{
+  width: 40%;
+  border: solid 0.5px black;
+}
+.paragraph-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.paragraph{
+  text-align: center;
+}
+.legend-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.legend-header{
+  text-align: center;
+}
+.legend-col-left{
+  padding: 10px 0 10px 100px;
+}
+.legend-col-right{
+  padding: 10px 0 10px 0;
+}
+.card{
+  border: solid 0.5px black;
+  align-items: stretch;
+}
+.card-img-top{
+  border-bottom: solid 0.5px black;
+  height: 240px;
+}
+.card-title{
+  text-align: center;
+}
+.card-body{
+  height: 184px;
+}
+.card-text{
+  font-size: 0.95rem;
+  text-align: center;
+}
+/* Footer CSS */
+.col-footer{
+  text-align: center;
+}
+.footer .btn{
+  background-color: white;
+  border: none;
+}

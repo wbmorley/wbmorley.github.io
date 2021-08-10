@@ -1,0 +1,84 @@
+/* Header CSS */
+.main-header{
+  text-align: center;
+  padding: 5% 17%;
+}
+
+/* Detection CSS */
+.detection-header{
+  text-align: left;
+  padding: 2% 3% 2% 3%;
+}
+.detection-paragraph{
+  padding-right: 40%;
+}
+
+.detection-image{
+  display: block;
+  margin: 10px auto;
+  border-style: solid;
+  height: 240px;
+  width: 360px;
+}
+.accordion{
+  margin: 50px 12px;
+  border: solid 1px;
+}
+.accordion-body{
+  align-items: center;
+}
+.accordion-image-two{
+  border: solid 0.75px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 210px;
+  width: 65%;
+}
+.accordion-image{
+  border: solid 0.75px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 210px;
+  width: 40%;
+}
+
+/* Recognition CSS */
+.recognition-header{
+  text-align: right;
+  padding: 2% 3% 2% 3%;
+}
+.recognition-paragraph{
+  padding-left: 40%;
+}
+.recognition-image{
+  display: block;
+  margin: 10px auto;
+  border-style: solid;
+  height: 240px;
+  width: 360px;
+}
+.recognition-explain{
+  text-align: center;
+}
+.recognition-explain{
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  border: solid 1px black;
+}
+.recognition-content{
+  padding-top: 7%;
+}
+
+/* Footer CSS */
+.col-footer{
+  text-align: center;
+}
+.footer .btn{
+  background-color: white;
+  border: none;
+}

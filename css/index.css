@@ -1,0 +1,124 @@
+/* Elements */
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+hr{
+  margin: 0;
+}
+ul{
+  display: table;
+  margin: 0 auto;
+}
+
+/*landing section*/
+.first-div{
+  color: white;
+  background-image: url("cool-background.png");
+  padding: 40px 10px;
+}
+.col-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pic-me{
+  border-radius: 50%;
+  width:60%;
+  height:85%;
+}
+.col-name{
+  text-align: center;
+  margin: auto;
+}
+
+/* About CSS */
+.second-div{
+  text-align: right;
+}
+.section-title{
+  text-align: center;
+}
+.about-paragraph{
+  text-align: center;
+  line-height: 1.75;
+  font-size: 1.15rem;
+}
+.about-image{
+  width: 50%;
+  height: 350px;
+  padding: 35px 0;
+  opacity: 0.65;
+}
+.image-div{
+  background-color: gray;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Skills CSS */
+.skills-col{
+  margin: 25px 0;
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+.third-div{
+  text-align: center;
+  background-color: #212529;
+}
+.skills ul{
+  padding-top:10px;
+  margin: 0 10px;
+}
+.skills-row{
+  padding: 25px 0;
+  margin-right: 0;
+}
+.skill-icon-display{
+  background: gray;
+}
+.skill-icon{
+  margin: 40px auto;
+  width: 15%;
+}
+
+/* Projects CSS */
+.col-projectHead{
+  color: #CAD2C5;
+  align-content: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.card{
+  padding: 10px  10px;
+}
+.card-body{
+  margin: auto;
+}
+.project-pic{
+  width: 266px;
+  height: 235px;
+}
+.col-projectHead h2{
+  text-decoration: underline;
+}
+/* @media screen and (max-width:770px){
+  .skills-col{
+    text-align: center;
+  }
+} */
+
+/* Footer CSS */
+.footer-icon{
+  padding: 2.5px;
+  color: #CAD2C5;
+}
+.col-footer{
+  text-align: center;
+}
+.footer{
+  background-color: #212529;
+  color: #CAD2C5;
+  display:flex;
+  align-content: center;
+}
